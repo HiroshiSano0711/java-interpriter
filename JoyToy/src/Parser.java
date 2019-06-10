@@ -1,9 +1,9 @@
 public class Parser {
-	private Lexer lex;
+	private TokenReader lex;
 	
-	public JTCode parse(Lexer lexer) {
+	public JTCode parse(TokenReader reader) {
 		JTCode code = null;
-		lex = lexer;
+		lex = reader;
 		
 		try {
 			code = program();
